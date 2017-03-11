@@ -10,7 +10,6 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+get('/', 'StaticPagesController@home');
+get('/help', 'StaticPagesController@help');
+get('/about', 'StaticPagesController@about');

@@ -22,3 +22,5 @@ post('login', 'SessionsController@store')->name('login');
 delete('logout', 'SessionsController@destroy')->name('logout');
 
 get('user/{id}/edit', 'UsersController@edit')->name('users.edit');
+
+get('signup/confirm/{token}', 'UsersController@confirmEmail')->name('confirm_email');

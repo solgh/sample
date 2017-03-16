@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>@yield('title', 'Sample App') - Laravel 入门教程</title>
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/app.css?{{ str_random(10) }}">
   </head>
   <body>
     @include('layouts._header')
